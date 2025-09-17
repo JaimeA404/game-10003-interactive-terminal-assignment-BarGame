@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 class Program
 {
@@ -20,6 +20,10 @@ class Program
             Console.WriteLine("(Jerry and Millie are complete strangers to you)");
             Console.WriteLine("(But Mrs. Gabriel was your teacher in high school who you never liked)");
             Console.WriteLine("(She always gave you the lowest grades in the class despite all your efforts)");
+
+            //character who player roleplays as has bad history with Mrs. Gabriel
+            //bad history will be brought up later in the game
+
             Console.WriteLine("");
             Console.WriteLine("Who do you serve first? (Jerry/Millie/Mrs. Gabriel)");
             string customer = Console.ReadLine();
@@ -36,7 +40,8 @@ class Program
 
                 string jerryingredients = Console.ReadLine();
 
-                // ✅ Strict boolean: must match exactly
+                //player must choose the correct ingredients in the right sequence
+
                 bool jerrydrinkcorrect = jerryingredients.ToLower() == "potted cactus, battery acid, ice cream, milk";
 
                 if (jerrydrinkcorrect)
@@ -54,10 +59,12 @@ class Program
                 }
             }
         }
-        else if (answer.ToLower() == "no") // ✅ now in the right place
+        else if (answer.ToLower() == "no") //finally moved the "no" option to the proper place
         {
             Console.WriteLine("Your boss won't like this");
             Console.WriteLine("Boss: You're fired!");
+
+            //player loses for not playing the game
         }
     }
 }
