@@ -31,7 +31,7 @@ class Program
             // Player can pick who to serve first
             int customerServed = int.Parse(Console.ReadLine());
 
-            // Jerry
+            // Jerry path
             if (customerServed == 1)
             {
                 Console.WriteLine("");
@@ -196,7 +196,7 @@ class Program
                     }
                 }
             }
-            // Millie
+            // Millie path
             else if (customerServed == 2)
             {
                 Console.WriteLine("");
@@ -371,7 +371,7 @@ class Program
                     Console.WriteLine("Millie: Something's missing... I'm Leaving!");
                 }
             }
-            // Mrs. Gabriel first
+            // Mrs. Gabriel path
             else if (customerServed == 3)
             {
                 Console.WriteLine("");
