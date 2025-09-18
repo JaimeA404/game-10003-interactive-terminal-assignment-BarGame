@@ -195,6 +195,12 @@ class Program
                         }
                     }
                 }
+                else
+                {
+                    Console.WriteLine("");
+                    Console.WriteLine("Jerry: This isn't right... I'm leaving!");
+                }
+                    
             }
             // Millie
             else if (customerServed == 2)
